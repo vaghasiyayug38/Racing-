@@ -48,7 +48,7 @@ export default function Navbar() {
             <a
               key={item}
               href={#${item.toLowerCase()}}
-              className="text-white/70 hover:text-cyan-400 transition-colors"
+              className="text-white/70 hover:text-cyan-400 transition-colors duration-300"
             >
               {item}
             </a>
@@ -60,8 +60,10 @@ export default function Navbar() {
         </div>
 
         <button
+          type="button"
           className="md:hidden text-white text-3xl"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle Menu"
         >
           {mobileOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -81,7 +83,7 @@ export default function Navbar() {
                   key={item}
                   href={#${item.toLowerCase()}}
                   onClick={() => setMobileOpen(false)}
-                  className="text-white/70 hover:text-cyan-400"
+                  className="text-white/70 hover:text-cyan-400 transition-colors duration-300"
                 >
                   {item}
                 </a>
@@ -96,4 +98,4 @@ export default function Navbar() {
       </AnimatePresence>
     </motion.nav>
   );
-                  }
+}
