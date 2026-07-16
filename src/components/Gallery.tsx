@@ -34,6 +34,6 @@ export default function Gallery() {
           ))}
         </div>
       </div>
-    <</section>
+    </section>
       )
 }
