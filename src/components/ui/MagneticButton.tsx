@@ -65,13 +65,14 @@ export default function MagneticButton({
         damping: 15,
         mass: 0.1,
       }}
-      className={`${baseClasses} ${sizeClasses} ${variantClasses} ${className}`}
-      {...props}>
-      <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-100 transition-opacity rounded-full pointer-events-none"></span>
+      className={${baseClasses} ${sizeClasses} ${variantClasses} ${className}}
+      {...props}
+    >
+      <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-100 transition-opacity rounded-full pointer-events-none" />
 
       <span className="relative z-10">{children}</span>
 
-      <span className="absolute -inset-1 rounded-full bg-gradient-to-r from-neon-blue via-neon-pink to-neon-purple opacity-40 blur-lg animate-gradient-x bg-300% pointer-events-none"></span>
+      <span className="absolute -inset-1 rounded-full bg-gradient-to-r from-neon-blue via-neon-pink to-neon-purple opacity-40 blur-lg animate-gradient-x bg-300% pointer-events-none" />
     </motion.button>
   );
-  }
+        }
