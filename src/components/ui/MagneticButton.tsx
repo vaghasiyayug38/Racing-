@@ -65,9 +65,8 @@ export default function MagneticButton({
         damping: 15,
         mass: 0.1,
       }}
-      className={${baseClasses} ${sizeClasses} ${variantClasses} ${className}}
-      {...props}
-    >
+      className={`${baseClasses} ${sizeClasses} ${variantClasses} ${className}`}
+      {...props}>
       <span className="absolute inset-0 bg-white/20 opacity-0 hover:opacity-100 transition-opacity rounded-full pointer-events-none"></span>
 
       <span className="relative z-10">{children}</span>
